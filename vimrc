@@ -13,6 +13,7 @@ set wrap " Wrap lines
 
 syntax enable
 set number
+set nuw=1
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'xterm-256color'
