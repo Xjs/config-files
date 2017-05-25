@@ -1,18 +1,18 @@
-local host="%{$fg[red]%}%m%{$reset_color%} "
+local zsh_prompt_host="%{$fg[red]%}%m%{$reset_color%} "
 if [[ "$USER" != "root" ]]; then
-	local user="%{$fg[yellow]%}$USER%{$reset_color%}@"
+	local zsh_prompt_user="%{$fg[yellow]%}$USER%{$reset_color%}@"
 	if [[ "$USER" == "jannis" && "$HOST" =~ "Africa" ]]; then
-		user=""
-		host=""
+		zsh_prompt_user=""
+		zsh_prompt_host=""
 	fi
-	local glyph="$"
+	local zsh_prompt_glyph="$"
 else
-	local user=""
-	host="%{$fg_bold[red]%}%m%{$reset_color%} "
-	local glyph="#"
+	local zsh_prompt_user=""
+	zsh_prompt_host="%{$fg_bold[red]%}%m%{$reset_color%} "
+	local zsh_prompt_glyph="#"
 fi
-local ret_status="%(?:%{$fg[green]%}${glyph}:%{$fg[red]%}${glyph})%{$reset_color%}"
-PROMPT='${user}${host}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)${ret_status} '
+local zsh_prompt_ret_status="%(?:%{$fg[green]%}${zsh_prompt_glyph}:%{$fg[red]%}${zsh_prompt_glyph})%{$reset_color%}"
+PROMPT='${zsh_prompt_user}${zsh_prompt_host}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)${zsh_prompt_ret_status} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
