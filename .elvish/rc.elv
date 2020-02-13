@@ -1,4 +1,17 @@
 edit:insert:binding[Alt-Backspace] = $edit:kill-small-word-left~
+edit:insert:binding[Alt-Delete] = $edit:kill-small-word-right~
+edit:insert:binding[Ctrl-Backspace] = $edit:kill-small-word-left~
+edit:insert:binding[Ctrl-Delete] = $edit:kill-small-word-right~
+
+edit:insert:binding[Ctrl-Left] = $edit:move-dot-left-small-word~
+edit:insert:binding[Ctrl-Right] = $edit:move-dot-right-small-word~
+edit:insert:binding[Alt-Left] = $edit:move-dot-left-small-word~
+edit:insert:binding[Alt-Right] = $edit:move-dot-right-small-word~
+
+edit:insert:binding[Ctrl-Alt-Backspace] = $edit:kill-word-left~
+edit:insert:binding[Ctrl-Alt-Delete] = $edit:kill-word-right~
+edit:insert:binding[Ctrl-Alt-Left] = $edit:move-dot-left-word~
+edit:insert:binding[Ctrl-Alt-Right] = $edit:move-dot-right-word~
 
 use github.com/zzamboni/elvish-completions/cd
 use github.com/zzamboni/elvish-completions/git
