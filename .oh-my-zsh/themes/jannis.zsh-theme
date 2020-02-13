@@ -1,5 +1,8 @@
 local zsh_prompt_host="%{$fg[red]%}%m%{$reset_color%} "
 if [[ "$USER" != "root" ]]; then
+	if [ -z "$USER" ]; then
+		USER="$USERNAME"
+	fi
 	local zsh_prompt_user="%{$fg[yellow]%}$USER%{$reset_color%}@"
 	if [[ "$USER" == "jannis" && "$HOST" =~ "Africa" ]]; then
 		zsh_prompt_user=""
@@ -18,3 +21,4 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}_"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+
