@@ -1,5 +1,8 @@
 local zsh_prompt_host="%{$fg[red]%}%m%{$reset_color%} "
 if [[ "$USER" != "root" ]]; then
+	if [ -z "$USER" ]; then
+		USER="$USERNAME"
+	fi
 	local zsh_prompt_user="%{$fg[yellow]%}$USER%{$reset_color%}@"
 	if [[ "$USER" == "jannis" && "$HOST" =~ "Africa" ]]; then
 		zsh_prompt_user=""
