@@ -5,8 +5,11 @@ ZSH_THEME="jannis"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-alias tip="GIT_PAGER= git log -1 --oneline --no-abbrev"
+alias tip="git --no-pager log -1 --oneline --no-abbrev"
 
 export GPGHOME=~/.gnupg/
 export GNUPGHOME=~/.gnupg/
 
+if [ -f "$HOME/.alias" ]; then
+	source $HOME/.alias
+fi
