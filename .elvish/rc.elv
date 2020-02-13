@@ -21,5 +21,7 @@ if (has-external plink.exe) {
 	set-env GIT_SSH 'plink.exe'
 }
 
-fn ls [@a]{ e:ls --color $@a }
-
+@discard = (have_gnu_ls = ?(ls --version 2>&-))
+if $have_gnu_ls {
+	fn ls [@a]{ e:ls --color $@a }
+}
