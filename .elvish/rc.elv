@@ -27,3 +27,6 @@ if (not $have_gnu_ls) {
 	up:ls~ = $e:ls~
 }
 
+# Import ~/.elvish/rc-local.elv in the current scope if it exists, drop error message.
+if ?(-source ~/.elvish/rc-local.elv) { }
+
