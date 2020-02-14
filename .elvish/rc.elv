@@ -1,3 +1,7 @@
+use github.com/zzamboni/elvish-completions/cd
+use github.com/zzamboni/elvish-completions/git
+use github.com/zzamboni/elvish-completions/ssh
+
 edit:insert:binding[Alt-Backspace] = $edit:kill-small-word-left~
 edit:insert:binding[Alt-Delete] = $edit:kill-small-word-right~
 edit:insert:binding[Ctrl-Backspace] = $edit:kill-small-word-left~
@@ -12,10 +16,6 @@ edit:insert:binding[Ctrl-Alt-Backspace] = $edit:kill-word-left~
 edit:insert:binding[Ctrl-Alt-Delete] = $edit:kill-word-right~
 edit:insert:binding[Ctrl-Alt-Left] = $edit:move-dot-left-word~
 edit:insert:binding[Ctrl-Alt-Right] = $edit:move-dot-right-word~
-
-use github.com/zzamboni/elvish-completions/cd
-use github.com/zzamboni/elvish-completions/git
-use github.com/zzamboni/elvish-completions/ssh
 
 if (has-external plink.exe) {
 	set-env GIT_SSH 'plink.exe'
@@ -39,3 +39,4 @@ if (not $has_home_bin) {
 
 # Import ~/.elvish/rc-local.elv in the current scope if it exists, drop error message.
 if ?(-source ~/.elvish/rc-local.elv) { }
+
