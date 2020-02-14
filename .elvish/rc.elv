@@ -22,6 +22,8 @@ if (has-external plink.exe) {
 }
 
 @discard = (have_gnu_ls = ?(ls --version 2>&-))
-if $have_gnu_ls {
-	fn ls [@a]{ e:ls --color $@a }
+fn ls [@a]{ e:ls --color $@a }
+if (not $have_gnu_ls) {
+	up:ls~ = $e:ls~
 }
+
