@@ -27,6 +27,15 @@ if (not $have_gnu_ls) {
 	up:ls~ = $e:ls~
 }
 
+has_home_bin = $false
+for path $paths {
+	if (==s (path-abs $path) (path-abs "~/bin")) {
+		has_home_bin = $true
+	}
+}
+if (not $has_home_bin) {
+	paths = [~/bin $@paths]
+}
+
 # Import ~/.elvish/rc-local.elv in the current scope if it exists, drop error message.
 if ?(-source ~/.elvish/rc-local.elv) { }
-
