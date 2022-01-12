@@ -1,5 +1,6 @@
 use str
 use path
+use file
 
 use github.com/zzamboni/elvish-completions/cd
 use github.com/zzamboni/elvish-completions/git
@@ -44,5 +45,9 @@ if (not $has_home_bin) {
 }
 
 # Import ~/.elvish/rc-local.elv in the current scope if it exists, drop error message.
-set _ = ?(eval (slurp <~/.elvish/rc-local.elv))
+var f
+if ?(set f = (file:open ~/.elvish/rc-local.elv)) {
+	eval (slurp <$f)
+	file:close $f
+}
 
