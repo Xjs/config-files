@@ -3,3 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Jannis Andrija Schnitzer
 	email = jannis@schnitzer.im
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
