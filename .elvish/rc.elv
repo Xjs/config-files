@@ -26,7 +26,7 @@ if (has-external plink.exe) {
 	set-env GIT_SSH 'plink.exe'
 }
 
-var have_gnu_ls = ?(ls --version 2>&-)
+var have_gnu_ls = ?(ls --version >&- 2>&-)
 fn ls {|@a| e:ls --color $@a }
 # BSD ls has --color now, too
 #if (not $have_gnu_ls) {
