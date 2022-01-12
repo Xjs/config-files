@@ -1,6 +1,7 @@
 use str
 use path
 use file
+use platform
 
 use github.com/zzamboni/elvish-completions/cd
 use github.com/zzamboni/elvish-completions/git
@@ -27,7 +28,12 @@ if (has-external plink.exe) {
 	set-env GIT_SSH 'plink.exe'
 }
 
-var have_colour_ls = ?(ls --color >&- 2>&-)
+var null = "/dev/null"
+if $platform:is-windows {
+	set null = "NUL"
+}	
+
+var have_colour_ls = ?(ls --color >$null 2>$null)
 if $have_colour_ls {
 	edit:add-var "ls~" {|@a| e:ls --color $@a }
 }
