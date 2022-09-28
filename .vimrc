@@ -17,5 +17,5 @@ if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'xterm-256color'
 	set t_Co=256
 endif
 set background=dark
-colorscheme zellner
+colorscheme elflord
 
