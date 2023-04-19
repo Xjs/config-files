@@ -48,9 +48,9 @@ if (not $has_home_bin) {
 	set paths = [~/bin $@paths]
 }
 
-# Import ~/.elvish/rc-local.elv in the current scope if it exists, drop error message.
+# Import ~/.config/elvish/rc-local.elv in the current scope if it exists, drop error message.
 var f
-if ?(set f = (file:open ~/.elvish/rc-local.elv)) {
+if ?(set f = (file:open ~/.config/elvish/rc-local.elv)) {
 	eval (slurp <$f)
 	file:close $f
 }
