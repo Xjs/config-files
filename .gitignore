@@ -4,9 +4,9 @@
 .lesshst
 .viminfo
 .zsh_history
-/.elvish/db
-/.elvish/lib/github.com
-/.elvish/rc-local.elv
+/.config/elvish/db
+/.config/elvish/lib/github.com
+/.config/elvish/rc-local.elv
 /.ssh/id_*
 /.ssh/known_hosts
 /.config/gcloud/logs
