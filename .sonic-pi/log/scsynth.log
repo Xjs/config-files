@@ -1,0 +1,26 @@
+# Starting SuperCollider 2021-07-19 14:22:50
+Number of Devices: 4
+   0 : "DELL U2520D"
+   1 : "External Headphones"
+   2 : "MacBook Pro Microphone"
+   3 : "MacBook Pro Speakers"
+
+"MacBook Pro Microphone" Input Device
+   Streams: 1
+      0  channels 1
+
+"External Headphones" Output Device
+   Streams: 1
+      0  channels 2
+
+SC_AudioDriver: sample rate = 44100.000000, driver's block size = 512
+SuperCollider 3 server ready.
+FAILURE IN SERVER /n_free Node 961 not found
+FAILURE IN SERVER /n_free Node 977 not found
+FAILURE IN SERVER /n_free Node 969 not found
+FAILURE IN SERVER /n_free Node 970 not found
+FAILURE IN SERVER /n_free Node 978 not found
+FAILURE IN SERVER /n_free Node 1035 not found
+FAILURE IN SERVER /n_free Node 1043 not found
+FAILURE IN SERVER /n_free Node 1039 not found
+FAILURE IN SERVER /n_free Node 1031 not found

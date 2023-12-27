@@ -40,3 +40,4 @@
 /.krew/
 /.mono/
 /.vnc/
+.tool-versions

@@ -1,0 +1,39 @@
+
++--------------------------------------+
+    This is the Sonic Pi OSC Server     
+       Powered by Erlang 23             
+                                        
+        Incoming OSC on port 4560         
+  OSC cue forwarding to {127,0,0,1}              
+                     on port 51235         
++--------------------------------------+
+
+
+
++--------------------------------------+
+    This is the Sonic Pi API Server     
+       Powered by Erlang 23             
+                                        
+       API listening on port 51238         
++--------------------------------------+
+
+
+
++--------------------------------------+
+    This is the Sonic Pi MIDI Server    
+       Powered by Erlang 23             
+                                        
+   Detected MIDI input ports:           
+   [] 
+                                        
+   Detected MIDI output ports:          
+   [] 
++--------------------------------------+
+
+
+Enabling midi cue forwarding 
+Enabling cue forwarding 
+Enabling cue forwarding 
+=INFO REPORT==== 21-Jul-2021::15:14:43.975658 ===
+SIGTERM received - shutting down
+

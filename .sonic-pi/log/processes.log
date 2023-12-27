@@ -1,0 +1,34 @@
+No pids store found here: /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids
+Exiting
+Creating pids store: /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids
+Started [59138] [-]  [-] /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids/59138
+Started [59159] [-]  [-] /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids/59159
+Started [59189] [-]  [-] /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids/59189
+
+	ask-clear.rb
+
+
+Clearing pids: ["59138", "59189", "59159"]
+
+Clearing [59138]
+  -- command 
+  -- removing /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids/59138
+  -- politely killing 59138
+  -- killed 59138
+
+Clearing [59189]
+  -- command 
+  -- removing /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids/59189
+  -- politely killing 59189
+  -- politely killing 59189
+  -- politely killing 59189
+  -- force killing 59189
+  -- killed 59189
+
+Clearing [59159]
+  -- command 
+  -- removing /var/folders/yq/5gn_k7n55gq6r095zlq10sww0000gn/T/sonic-pi-pids/59159
+  -- process 59159 already stopped
+
+Finished clearing pids
+
