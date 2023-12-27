@@ -3,13 +3,17 @@
 .CFUserTextEncoding
 .lesshst
 .viminfo
-.zsh_history
+.*_history
 /.config/elvish/db
 /.config/elvish/lib/github.com
 /.config/elvish/rc-local.elv
 /.config/elvish/lib/asdf.elv
 /.config/gcloud/
 /.config/containers/
+/.config/gqrx/
+/.config/gtk-2.0/
+/.cups/
+/.dlv/
 /.gsutil/
 /.ipython/
 /.jira.d/
@@ -29,6 +33,7 @@
 /.config/gcloud/logs
 /.kube/cache
 /.vscode-insiders
+/.vscode
 /.zsh_sessions
 /.npm/
 /.rustup/
@@ -43,3 +48,6 @@
 .tool-versions
 /.sonic-pi/
 /.gnupg/
+/.cache/
+/.lldb/
+
