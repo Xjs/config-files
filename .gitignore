@@ -20,6 +20,7 @@
 /.gsutil/
 /.ipython/
 /.jira.d/
+/.john/kernels/
 /.julia/
 /.keras/
 /.kube/gke_gcloud_auth_plugin_cache
