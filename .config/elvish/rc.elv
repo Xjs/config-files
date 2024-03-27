@@ -6,6 +6,11 @@ use platform
 use github.com/zzamboni/elvish-completions/cd
 use github.com/zzamboni/elvish-completions/git
 use github.com/zzamboni/elvish-completions/ssh
+use github.com/zzamboni/elvish-completions/dd
+
+use github.com/aca/elvish-bash-completion/bash-completer
+
+use github.com/zzamboni/elvish-modules/iterm2
 
 set edit:insert:binding[Alt-Backspace] = $edit:kill-small-word-left~
 set edit:insert:binding[Alt-Delete] = $edit:kill-small-word-right~
@@ -56,4 +61,6 @@ if ?(set f = (file:open ~/.config/elvish/rc-local.elv)) {
 	eval (slurp <$f)
 	file:close $f
 }
+
+iterm2:init
 
