@@ -10,8 +10,11 @@
 /.config/elvish/lib/asdf.elv
 /.config/gcloud/
 /.config/containers/
+/.config/micro/
+/.config/zed/
 /.config/gqrx/
 /.config/gtk-2.0/
+/.config/iterm2/
 /.cups/
 /.dlv/
 /.gsutil/
@@ -30,6 +33,7 @@
 /.ssh/authorized_keys
 /.mime.types
 /.ssh/known_hosts
+/.sonar/
 /.config/gcloud/logs
 /.kube/cache
 /.vscode-insiders

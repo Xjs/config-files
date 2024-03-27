@@ -21,6 +21,8 @@ set edit:insert:binding[Ctrl-Alt-Backspace] = $edit:kill-word-left~
 set edit:insert:binding[Ctrl-Alt-Delete] = $edit:kill-word-right~
 set edit:insert:binding[Alt-Shift-Backspace] = $edit:kill-word-left~
 set edit:insert:binding[Alt-Shift-Delete] = $edit:kill-word-right~
+set edit:insert:binding[Alt-Shift-Left] = $edit:move-dot-left-word~
+set edit:insert:binding[Alt-Shift-Right] = $edit:move-dot-right-word~
 set edit:insert:binding[Ctrl-Alt-Left] = $edit:move-dot-left-word~
 set edit:insert:binding[Ctrl-Alt-Right] = $edit:move-dot-right-word~
 
