@@ -35,6 +35,20 @@ if (has-external plink.exe) {
 	set-env GIT_SSH 'plink.exe'
 }
 
+var completion_path = /opt/homebrew/etc/bash_completion.d/
+
+if ?(test -d $completion_path) {
+	for item [(ls $completion_path)] {
+		if (not ?(test -f $completion_path/$item)) { continue }
+		if (has-key $edit:completion:arg-completer $item) { continue }
+		if ?(grep -q "complete -o default -F __start" $completion_path/$item) {
+			set edit:completion:arg-completer[$item] = (bash-completer:new $item &bash_function="__start_"$item)
+		} else {
+			set edit:completion:arg-completer[$item] = (bash-completer:new $item)
+		}
+	}
+}
+
 var null = "/dev/null"
 if $platform:is-windows {
 	set null = "NUL"
