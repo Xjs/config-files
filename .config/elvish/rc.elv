@@ -14,22 +14,15 @@ use github.com/zzamboni/elvish-modules/iterm2
 
 set edit:insert:binding[Alt-Backspace] = $edit:kill-small-word-left~
 set edit:insert:binding[Alt-Delete] = $edit:kill-small-word-right~
-set edit:insert:binding[Ctrl-Backspace] = $edit:kill-small-word-left~
-set edit:insert:binding[Ctrl-Delete] = $edit:kill-small-word-right~
 
-set edit:insert:binding[Ctrl-Left] = $edit:move-dot-left-small-word~
-set edit:insert:binding[Ctrl-Right] = $edit:move-dot-right-small-word~
 set edit:insert:binding[Alt-Left] = $edit:move-dot-left-small-word~
 set edit:insert:binding[Alt-Right] = $edit:move-dot-right-small-word~
 
-set edit:insert:binding[Ctrl-Alt-Backspace] = $edit:kill-word-left~
-set edit:insert:binding[Ctrl-Alt-Delete] = $edit:kill-word-right~
 set edit:insert:binding[Alt-Shift-Backspace] = $edit:kill-word-left~
 set edit:insert:binding[Alt-Shift-Delete] = $edit:kill-word-right~
+
 set edit:insert:binding[Alt-Shift-Left] = $edit:move-dot-left-word~
 set edit:insert:binding[Alt-Shift-Right] = $edit:move-dot-right-word~
-set edit:insert:binding[Ctrl-Alt-Left] = $edit:move-dot-left-word~
-set edit:insert:binding[Ctrl-Alt-Right] = $edit:move-dot-right-word~
 
 if (has-external plink.exe) {
 	set-env GIT_SSH 'plink.exe'
