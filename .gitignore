@@ -23,6 +23,7 @@
 /.jira.d/
 /.john/kernels/
 /.julia/
+/.jupyter/
 /.keras/
 /.kube/gke_gcloud_auth_plugin_cache
 /.kuberlr/
