@@ -21,7 +21,7 @@
 /.gsutil/
 /.ipython/
 /.jira.d/
-/.john/kernels/
+/.john/
 /.julia/
 /.jupyter/
 /.keras/
