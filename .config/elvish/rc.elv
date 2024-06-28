@@ -71,3 +71,8 @@ if ?(set f = (file:open ~/.config/elvish/rc-local.elv)) {
 
 iterm2:init
 
+set edit:insert:binding[Ctrl-R] = {
+	iterm2:ftcs-command-finished
+	edit:histlist:start
+}
+
