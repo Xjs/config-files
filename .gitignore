@@ -30,6 +30,7 @@
 /.local/
 /.mailcap
 /.matplotlib
+/.mongodb/
 /.ssh/id_*
 /.ssh/podman-*
 /.ssh/*_ed25519*
