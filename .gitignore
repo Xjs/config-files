@@ -1,5 +1,6 @@
 /[^.]*
 .Trash
+.idea
 .DS_Store
 .CFUserTextEncoding
 .lesshst
