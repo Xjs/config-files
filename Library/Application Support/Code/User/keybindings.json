@@ -152,5 +152,50 @@
         "key": "alt+cmd+down",
         "command": "-editor.action.insertCursorBelow",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+backspace",
+        "command": "-deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+delete",
+        "command": "deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+delete",
+        "command": "-deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+backspace",
+        "command": "-editor.action.removeBrackets",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
     }
 ]
